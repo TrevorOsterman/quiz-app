@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+header img {
+  height: 200px;
+}
