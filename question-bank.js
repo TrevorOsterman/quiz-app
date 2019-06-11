@@ -1,6 +1,6 @@
 BANK = [
   {
-  question: 'Who directed the 1993 haunting hit "The Exorcist?"',
+  question: 'Who directed the haunting 1993 hit "The Exorcist?"',
   answers: ['William Peter Blatty',
   'William Friedkin',
   'Alfred Hitchcock',

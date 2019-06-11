@@ -6,10 +6,14 @@
   padding: 0;
 }
 
+:focus {
+  color: red;
+}
+
 body {
   background:
     url(580b585b2edbce24c47b294f.png) 750px -250px,
-    url(dark-woods-tattoo-dark-woods-background-dark-woods-justice-dry-tree-white-1366x768.jpg);
+    url(dark-woods-tattoo-dark-woods-background-dark-woods-justice-dry-tree-white-1366x768.jpg) fixed;
     background-repeat: no-repeat;
   text-align: center;
 }
@@ -32,7 +36,7 @@ header ul li {
 
 header ul {
   text-align: right;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 main img {
@@ -119,7 +123,7 @@ fieldset span {
 
 .submitButton:hover{
   color: rgb(219, 226, 85);
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 .answers {
@@ -134,8 +138,7 @@ fieldset span {
 
 .container {
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 a {
@@ -147,4 +150,5 @@ a {
 a:hover {
   color: rgb(218, 70, 70);
   text-shadow: 1px 1px white;
+  letter-spacing: 5px;
 }
