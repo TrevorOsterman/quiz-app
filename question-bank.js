@@ -1,6 +1,6 @@
 BANK = [
   {
-  question: 'Who directed the Exorcist?',
+  question: 'Who directed the 1993 haunting hit "The Exorcist?"',
   answers: ['William Peter Blatty',
   'William Friedkin',
   'Alfred Hitchcock',
@@ -8,7 +8,7 @@ BANK = [
   correctAnswer: 'William Friedkin',
 },
 {
-  question: 'Who is the murderous antagonist in the original Friday the 13th?',
+  question: 'Who is the murderous antagonist in the original "Friday the 13th?"',
   answers: ['Freddy Kreuger',
   'Jason Voorhees',
   'Pamela Voorhees',
@@ -24,7 +24,7 @@ BANK = [
   correctAnswer: 'Burkittsville',
 },
 {
-  question: `What year did John Carpenter's "The Thing" come out?`,
+  question: `What year did John Carpenter's cult classic "The Thing" come out?`,
   answers: ['1988',
   '1985',
   '1979',
@@ -40,7 +40,7 @@ BANK = [
   correctAnswer: 'Xenomorph',
 },
 {
-  question: `What is the name of the hotel that was the setting for Stephen King's "The Shining"?`,
+  question: `What is the name of the hotel that was the setting for Stanley Kubrick (and Stephen King)'s "The Shining"?`,
   answers: ['The Grand Hotel',
   'The Overlook Hotel',
   'Bates Hotel',
