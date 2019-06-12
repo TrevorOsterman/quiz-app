@@ -6,12 +6,6 @@
   padding: 0;
 }
 
-:focus {
-  display: none;
-  outline: none;
-  text-decoration: underline;
-}
-
 body {
   background:
     url(https://i.imgur.com/HoIbXIR.jpg);
@@ -90,6 +84,9 @@ fieldset {
 }
 
 input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: none;
 }
 
