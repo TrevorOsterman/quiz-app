@@ -25,21 +25,21 @@ function renderQuestions() {
       <fieldset>
         <label class="answerOption">
         <input type="radio" value="${BANK[question-1].answers[0]}" name="answer" required>
-        <span class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[0]}</span>
+        <span tabindex="0" class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[0]}</span>
         </label>
         <label class="answerOption">
         <input type="radio" value="${BANK[question-1].answers[1]}" name="answer" required>
-        <span class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[1]}</span>
+        <span tabindex="0" class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[1]}</span>
         </label>
         <label class="answerOption">
         <input type="radio" value="${BANK[question-1].answers[2]}" name="answer" required>
-        <span class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[2]}</span>
+        <span tabindex="0" class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[2]}</span>
         </label>
         <label class="answerOption">
         <input type="radio" value="${BANK[question-1].answers[3]}" name="answer" required>
-        <span class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[3]}</span>
+        <span tabindex="0" class="answerText" onclick="selectAnswer()">${BANK[question-1].answers[3]}</span>
         </label>
-        <button type="submit" class="submitButton">Submit</button>
+        <button tabindex="0" type="submit" class="submitButton">Submit</button>
       </fieldset>
   </form>
   </div>
@@ -68,10 +68,6 @@ function submitAnswer() {
 }
 
 function renderFeedback() {
-  // console.log('render feedback running');
-  // $(".submitButton").click(event, function() {
-  //   console.log('clicked!');
-  //   event.preventDefault();
     let selectedGuess = $('input:checked');
     let answerGuess = selectedGuess.val();
     let correctAnswer = `${BANK[question-1].correctAnswer}`;
@@ -135,11 +131,9 @@ function renderResults() {
 function handleQuiz() {
   startQuiz();
   submitAnswer();
-  // renderFeedback();
   continueQuiz();
   questionTracker();
   scoreTracker();
-  // renderResults();
   console.log('handle quiz running');
 }
 

@@ -7,21 +7,18 @@
 }
 
 :focus {
-  color: red;
+  display: none;
+  outline: none;
+  text-decoration: underline;
 }
 
 body {
   background:
-    /* url(580b585b2edbce24c47b294f.png) 750px -500px, */
-    url(dark-woods-background-1.jpg);
+    url(https://i.imgur.com/HoIbXIR.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
 }
-
-/* main, #quiz-render {
-  background-image: url(580b585b2edbce24c47b294f.png);
-} */
 
 header {
   width: 100%;
@@ -62,16 +59,7 @@ main, #quiz-render {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  /* margin-top: 100px; */
-
 }
-
-/* .splatter {
-  background-image: url(blood-spatter-png-6-transparent.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 h1, h2, p {
   color: rgb(218, 70, 70);
@@ -92,10 +80,6 @@ p {
   font-size: 25px
 }
 
-#quiz-render {
-  /* margin-top: 100px; */
-}
-
 fieldset {
   font-size: 20px;
   width: 100%;
@@ -106,9 +90,15 @@ fieldset {
 }
 
 input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  display: none;
+}
+
+input:focus {
+  outline-color: red;
+}
+
+label:focus {
+  outline-color: red;
 }
 
 .titleh {
@@ -133,6 +123,10 @@ fieldset span {
   margin-top: 40px;
   font-size: 35px;
   color: rgb(218, 70, 70);
+}
+
+.submitButton:focus {
+  outline-color: red;
 }
 
 .submitButton:hover{
@@ -193,6 +187,10 @@ p.final{
 
   body {
     background-size: auto;
+  }
+
+  .titleh {
+    font-size: 60px;
   }
 
   .submitButton {
@@ -287,6 +285,10 @@ p.final{
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+  .titleh {
+    font-size: 60px;
   }
 
   .introp {
