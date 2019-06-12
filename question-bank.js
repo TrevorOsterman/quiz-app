@@ -40,7 +40,7 @@ BANK = [
   correctAnswer: 'Xenomorph',
 },
 {
-  question: `What is the name of the hotel that was the setting for Stanley Kubrick (and Stephen King)'s "The Shining"?`,
+  question: `What is the name of the hotel that was the setting for "The Shining"?`,
   answers: ['The Grand Hotel',
   'The Overlook Hotel',
   'Bates Hotel',
@@ -56,7 +56,7 @@ BANK = [
   correctAnswer: '8',
 },
 {
-  question: `Which famous slasher series features a killer in a William Shatner mask?`,
+  question: `Which slasher series features a killer in a William Shatner mask?`,
   answers: ['Scream',
   'I Know What You Did Last Summer',
   'Halloween',

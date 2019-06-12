@@ -50,8 +50,8 @@ function renderQuestions() {
 
 function selectAnswer() {
   $("body").on("click", 'span', function(event){
-    $('.answerText').css('color', 'rgb(218, 70, 70)');
-    $(this).css('color', 'white');
+    $('.answerText').css('color', 'white');
+    $(this).css('color', 'rgb(219, 226, 85)');
   })
 }
 
@@ -81,13 +81,13 @@ function renderFeedback() {
       score++;
       scoreTracker();
       $('#quiz-render').html(
-      `<h1>KILLER</h1>
-      <p>Nailed it! That's right, the correct answer was ${correctAnswer}.</p>
+      `<h1 class="results">KILLER</h1>
+      <p class="results">Nailed it! That's right, the correct answer was ${correctAnswer}.</p>
       <a href="/Users/TrevorOsterman/Projects/quiz-app/question-page.html" class="continueLink">Continue</a>`
     )} else {
       $('#quiz-render').html(
-      `<h1>YOU DIED</h1>
-      <p>Sorry! The answer we were looking for was ${correctAnswer}.</p>
+      `<h1 class="results">YOU DIED</h1>
+      <p class="results">Sorry! The answer we were looking for was ${correctAnswer}.</p>
       <a href="/Users/TrevorOsterman/Projects/quiz-app/question-page.html" class="continueLink">Continue</a>`)};
   }
 
@@ -116,21 +116,18 @@ function renderResults() {
   question = 10;
   if (score >= 8){
   $('#quiz-render').html(`
-    <h1>Congrats, you made it out alive!</h1>
-      <p>Your final score is ${score}. You'd likely outsmart any horror villain.</p>
-      <p>If you feel like returning to the start, click "Try again" below to go again!</p>
+    <h1 class="final">Congrats, you made it out alive!</h1>
+      <p class="final">Your final score is ${score}. You'd likely outsmart any horror villain. If you feel like returning to the start, click "Try again" below to go again!</p>
       <a href="index.html">Try again</a>
   `)} else if (score > 4) {
     $('#quiz-render').html(`
-    <h1>Oh no! Didn't quite make it!</h1>
-      <p> Cut down at the last minute! Your final score is ${score}.</p>
-      <p>If you're brave enough, click "Try again" below to give it another shot!</p>
+    <h1 class="final">Oh no! Didn't quite make it!</h1>
+      <p class="final"> Cut down at the last minute! Your final score is ${score}. If you're brave enough, click "Try again" below to give it another shot!</p>
       <a href="index.html">Try again</a>
   `)} else {
     $('#quiz-render').html(`
-    <h1>You didn't stand a chance.</h1>
-      <p>You'd be the first to die in a horror flick. Your final score is ${score}.</p>
-      <p>If you're brave enough, click "Try again" below to give it another shot!</p>
+    <h1 class="final">You didn't stand a chance.</h1>
+      <p class="final">You'd be the first to die in a horror flick. Your final score is ${score}. If you're brave enough, click "Try again" below to give it another shot!</p>
       <a href="index.html">Try again</a>
   `)}
   }
